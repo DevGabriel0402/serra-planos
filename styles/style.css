@@ -18,12 +18,17 @@ body {
     width: 100%;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--branco);
 }
 
 .hidden {
     display: none !important;
 }
+
+/* Header */
 
 header {
     width: 100%;
@@ -33,6 +38,8 @@ header {
     justify-content: center;
     padding: 10px 20px;
     transition: all .2s;
+    z-index: 99;
+    background-color: var(--branco);
 }
 
 .container-header {
@@ -106,4 +113,42 @@ header {
 
 .container-header .btn:hover i {
     transform: rotate(45deg);
+}
+
+/* Slider */
+.slider{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    z-index: 0 ;
+}
+
+.swiper-container{
+    margin-top: 5px;
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 20px;
+    overflow-x: hidden;
+    margin-inline: 0;
+}
+
+.swiper-slide{
+    width: 100%;
+    height: auto;
+
+}
+
+.swiper-container img{
+    width: 100%;
+    height: auto;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--verde) !important;
 }
