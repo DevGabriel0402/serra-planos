@@ -135,7 +135,7 @@ header {
     justify-content: center;
     margin-inline: 20px;
     overflow-x: hidden;
-    margin-inline: 0;
+    margin-inline: 20px;
 }
 
 .swiper-slide{
