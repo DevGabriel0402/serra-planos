@@ -1,0 +1,101 @@
+.hidden-menu {
+    display: none !important;
+}
+
+.button-open {
+    display: none;
+    font-size: 32px;
+    color: var(--azul);
+    cursor: pointer;
+}
+
+.button-close {
+    font-size: 32px;
+    color: var(--branco);
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.menu-lateral {
+    width: 400px;
+    min-height: 100vh;
+    max-width: 400px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-block: 100px;
+    background-color: var(--azul);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    /* transform: translateX(400px); */
+    animation: moveIn .5s forwards;
+
+}
+
+.menu-lateral ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-lateral ul li {
+    color: var(--branco);
+    font-size: 24px;
+}
+
+.menu-lateral ul a {
+    width: 350px;
+    padding: 10px 10px !important;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.menu-lateral ul i {
+    font-size: 24px !important;
+}
+
+
+@media (max-width: 790px) {
+    nav {
+        display: none !important;
+    }
+
+    .menu-lateral {
+        width: 100%;
+    }
+
+    .menu-lateral ul a {
+        width: 80%;
+    }
+
+    .button-open {
+        display: flex;
+    }
+}
+
+
+@keyframes moveIn {
+
+    0% {
+        transform: translateX(400px);
+    }
+
+    100% {
+        transform: translateX(0px);
+
+    }
+}
+
+@keyframes moveDown {
+
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(400px);
+
+    }
+}
