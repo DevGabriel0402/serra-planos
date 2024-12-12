@@ -102,7 +102,7 @@ header {
 }
 
 .container-header .btn i {
-    transform: rotate(90);
+    transform: rotate(0);
     font-size: 18px;
     transition: all .3s;
 }
