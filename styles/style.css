@@ -112,7 +112,7 @@ header {
 }
 
 .container-header .btn:hover i {
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
 }
 
 /* Slider */
