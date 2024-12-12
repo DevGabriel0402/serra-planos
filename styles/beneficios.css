@@ -7,6 +7,7 @@
     background-color: var(--azul);
     border-top: 6px solid var(--verde);
     z-index: 1;
+    padding-block: 80px;
 }
 
 .circle {
@@ -35,7 +36,7 @@
     justify-content: center;
     align-items: center;
     color: var(--branco);
-    padding-block: 40px;
+    padding-bottom: 40px;
     font-weight: 500;
 }
 
