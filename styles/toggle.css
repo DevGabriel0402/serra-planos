@@ -100,7 +100,7 @@
 @keyframes moveIn {
 
     0% {
-        transform: translateX(400px);
+        transform: translateX(280px);
     }
 
     100% {
@@ -116,7 +116,7 @@
     }
 
     100% {
-        transform: translateX(400px);
+        transform: translateX(280px);
 
     }
 }

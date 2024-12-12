@@ -22,6 +22,7 @@ body {
     align-items: center;
     justify-content: start;
     background-color: var(--branco);
+    overflow-x: hidden;
 }
 
 .hidden {
@@ -39,7 +40,8 @@ header {
     padding: 10px 20px;
     transition: all .2s;
     z-index: 99;
-    background-color: var(--branco);
+    background-color: #fafafa80;
+    backdrop-filter: blur(20px);
 }
 
 .container-header {
