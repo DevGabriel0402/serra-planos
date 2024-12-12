@@ -115,6 +115,15 @@ header {
     transform: rotate(-45deg);
 }
 
+/* Seção inicio */
+
+.secao-inicio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Slider */
 .slider {
     position: relative;
