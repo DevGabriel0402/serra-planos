@@ -116,17 +116,19 @@ header {
 }
 
 /* Slider */
-.slider{
+.slider {
     position: relative;
     width: 100%;
     height: auto;
-    display: flex ;
+    display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 0 ;
+    z-index: 0;
 }
 
-.swiper-container{
+
+
+.swiper-container {
     margin-top: 5px;
     width: 100%;
     max-width: 1140px;
@@ -138,13 +140,13 @@ header {
     margin-inline: 20px;
 }
 
-.swiper-slide{
+.swiper-slide {
     width: 100%;
     height: auto;
 
 }
 
-.swiper-container img{
+.swiper-container img {
     width: 100%;
     height: auto;
 }

@@ -6,6 +6,7 @@ const tabContato = document.getElementById(`contato`)
 
 
 
+
 tabInicio.addEventListener('click', () => {
     tabInicio.classList.add(`active`)
     tabPlanos.classList.remove(`active`)
