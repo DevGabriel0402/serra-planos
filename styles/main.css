@@ -1,0 +1,84 @@
+/* Main */
+
+.main {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 40px;
+}
+
+.main .main-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--azul);
+    line-height: 100%;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.main-title span {
+    background-color: var(--verde);
+    padding-inline: 5px;
+    padding-block: 5px;
+    color: var(--branco);
+}
+
+.main .main-content {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content p {
+    width: 50%;
+    line-height: 150%;
+    font-size: 20px;
+}
+
+.main-content p span {
+    font-weight: bold;
+    color: var(--azul);
+}
+
+.main-content img {
+    width: 450px;
+}
+
+@media (max-width: 768px) {
+    .main .main-content {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .main-content p {
+        width: 100%;
+        padding: 40px;
+        font-size: 18px;
+    }
+
+    .main-content img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .main-title {
+        font-size: 20px;
+    }
+
+    .main-content p {
+        padding: 40px;
+        font-size: 18px;
+    }
+
+    .main-content img {
+        width: 350px;
+    }
+}

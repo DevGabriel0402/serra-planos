@@ -40,8 +40,9 @@ header {
     padding: 10px 20px;
     transition: all .2s;
     z-index: 99;
-    background-color: #fafafa80;
+    background-color: #fafafaa0;
     backdrop-filter: blur(20px);
+    transition: all;
 }
 
 .container-header {
