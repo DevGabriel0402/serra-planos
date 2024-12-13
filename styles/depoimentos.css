@@ -1,0 +1,126 @@
+.depoimentos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 60px;
+    background-color: var(--verde);
+    gap: 50px;
+}
+
+.depoimentos h1{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--azul);
+    text-transform: uppercase;
+}
+
+.swiper-depoimentos{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+    width: 100%;
+    max-width: 1140px;
+    overflow-x: hidden;
+
+}
+
+.gradiente{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute !important;
+    z-index: 5 !important;
+    background-image: linear-gradient(90deg, var(--verde) 0%, transparent 25%, transparent 90%, var(--verde) 100%) !important; 
+}
+
+ .swiper-depoimentos #lista-de-depoimentos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+}
+
+.swiper-depoimentos .swiper-slide{
+    display: flex !important;
+    align-items: end !important;
+    justify-content: center !important;
+}
+
+
+/* Depoimento */
+.depoimento-container{
+    width: 350px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 12px;
+    background-color: var(--branco);
+    padding: 10px;
+    height: 130px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.depoimento-img{
+    width: 110px;
+    height: 110px;
+    border-radius: 8px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.depoimento-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.depoimento-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.depoimento-details .name{
+    color: var(--azul);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.depoimento-details .role{
+    color: var(--verde);
+    font-size: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.depoimento-text .description{
+    color: var(--azul);
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+@media (max-width: 500px) {
+
+    .depoimento-container{
+        width: 320px !important;
+}
+}
+
+@media (max-width: 500px) {
+.depoimentos h1{
+    font-size: 18px;
+    font-weight: 600;
+}
+    .depoimento-container{
+        width: 320px !important;
+}
+
+}
