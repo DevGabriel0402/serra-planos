@@ -1,0 +1,54 @@
+#loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#loading svg {
+    width: 80px;
+    height: 80px;
+}
+
+#loading svg path {
+
+    animation: fillAnimation 3s linear infinite;
+    /* Preenchimento contínuo */
+}
+
+/* Animação do preenchimento */
+@keyframes fillAnimation {
+    0% {
+        fill: #005998;
+        /* Cor inicial */
+    }
+
+    33% {
+        fill: #B1C900;
+        /* Segunda cor */
+    }
+
+    66% {
+        fill: #F6F6F6;
+        /* Terceira cor */
+    }
+
+    100% {
+        fill: #005998;
+        /* Volta à cor inicial */
+    }
+}
+
+/* Atrasos para cada path */
+#loading svg path:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#loading svg path:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+#loading svg path:nth-child(3) {
+    animation-delay: 1s;
+}

@@ -1,170 +1,185 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Estilos -->
-    <link rel="shortcut icon" href="./src/favicon.svg" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="./src/favicon.svg" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/toggle.css" />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/beneficios.css" />
-    <link rel="stylesheet" href="./styles/depoimentos.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <!-- Scripts -->
-    <script src="./js/app.js" defer></script>
-    <script src="./js/scroll.js" defer></script>
-    <script src="./js/menu-lateral.js" defer></script>
-    <script src="./js/swiper.js" defer></script>
-    <script src="./js/beneficios.js" defer></script>
-    <script src="./js/depoimentos.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <title>Serra Planos de Saúde</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Estilos -->
+  <link rel="shortcut icon" href="./src/favicon.svg" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="./src/favicon.svg" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/toggle.css" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/beneficios.css" />
+  <link rel="stylesheet" href="./styles/depoimentos.css" />
+  <link rel="stylesheet" href="./styles/faqs.css" />
+  <link rel="stylesheet" href="./styles/loading.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Scripts -->
+  <script src="./js/app.js" defer></script>
+  <script src="./js/scroll.js" defer></script>
+  <script src="./js/menu-lateral.js" defer></script>
+  <script src="./js/swiper.js" defer></script>
+  <script src="./js/beneficios.js" defer></script>
+  <script src="./js/depoimentos.js" defer></script>
+  <script src="./js/faqs.js" defer></script>
+  <script src="./js/laoding.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <body>
-    <!-- Header Fixo -->
-    <header class="header" id="header">
-      <div class="container-header" id="container-header">
-        <img src="./src/logo-principal.svg" alt="logo image" class="logo" />
-        <!-- Nav Desktop -->
-        <nav class="nav">
-          <ul>
-            <li class="active" id="inicio">Inicio</li>
-            <li id="planos">Nossos Planos</li>
-            <li id="rede">Rede</li>
-            <li id="sobre">Sobre</li>
-            <li id="contato">Contato</li>
-          </ul>
-          <a href="#" class="btn" id="btn-contratar"
-            >Contratar agora <i class="bx bx-right-arrow-alt"></i
-          ></a>
-        </nav>
+  <title>Serra Planos de Saúde</title>
+</head>
 
-        <!-- Botao do Menu Lateral -->
-        <i class="bx bx-menu-alt-right button-open" id="button-open"></i>
+<body>
 
-        <!-- Nav Lateral -->
-        <div class="menu-lateral hidden-menu" id="menu-lateral">
-          <i class="bx bx-right-arrow-alt button-close" id="button-close"></i>
-          <ul>
-            <li>Inicio</li>
-            <li>Nossos Planos</li>
-            <li>Rede</li>
-            <li>Sobre</li>
-            <li>Contato</li>
-          </ul>
-          <a href="#" class="btn" id="btn-contratar"
-            >Contratar agora <i class="bx bx-right-arrow-alt"></i
-          ></a>
-        </div>
+  <div id="loading">
+    <svg width="257" height="257" viewBox="0 0 257 257" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M140.071 40.6594C187.08 44.2413 210.192 89.1901 216.057 112.761C200.405 81.7417 165.663 69.9553 150.248 67.9395C140.231 66.0672 124.478 60.1888 125.153 49.8141C125.587 43.1517 133.414 40.1522 140.071 40.6594Z" />
+      <path
+        d="M113.124 61.4692C111.521 50.6067 119.314 42.1155 124.018 38.9171C102.79 44.0812 102.751 61.0258 106.239 69.9054C109.728 78.7849 143.977 109.863 127.17 153.31C113.724 188.067 77.5922 187.877 61.2074 183.437C67.867 196.228 91.1441 220.921 130.975 217.369C178.227 211.027 193.319 182.04 196.938 153.31C200.556 124.579 179.724 96.8032 157.931 87.3474C138.608 78.9631 126.889 79.214 117.836 70.3148C115.401 67.9213 113.622 64.847 113.124 61.4692Z" />
+      <path
+        d="M83.8348 150.163C70.0789 155.322 42.2412 154.833 40.938 111.61C43.7061 72.2183 86.188 48.5691 108.321 41.1743C102.421 44.6526 92.0341 58.6138 97.6812 86.6325C110.93 125.294 93.9708 145.095 83.8348 150.163Z" />
+    </svg>
+  </div>
+  <!-- Header Fixo -->
+  <header class="header hidden" id="header">
+    <div class="container-header" id="container-header">
+      <img src="./src/logo-principal.svg" alt="logo image" class="logo" />
+      <!-- Nav Desktop -->
+      <nav class="nav">
+        <ul>
+          <li class="active" id="inicio">Inicio</li>
+          <li id="planos">Nossos Planos</li>
+          <li id="rede">Rede</li>
+          <li id="sobre">Sobre</li>
+          <li id="contato">Contato</li>
+        </ul>
+        <a href="#" class="btn" id="btn-contratar">Contratar agora <i class="bx bx-right-arrow-alt"></i></a>
+      </nav>
+
+      <!-- Botao do Menu Lateral -->
+      <i class="bx bx-menu-alt-right button-open" id="button-open"></i>
+
+      <!-- Nav Lateral -->
+      <div class="menu-lateral hidden-menu" id="menu-lateral">
+        <i class="bx bx-right-arrow-alt button-close" id="button-close"></i>
+        <ul>
+          <li id="menu-inicio">Inicio</li>
+          <li id="menu-nossos-planos">Nossos Planos</li>
+          <li id="menu-rede">Rede</li>
+          <li id="menu-sobre">Sobre</li>
+          <li id="menu-contato">Contato</li>
+        </ul>
+        <a href="#" class="btn" id="btn-contratar">Contratar agora <i class="bx bx-right-arrow-alt"></i></a>
       </div>
-    </header>
-    <section class="secao-inicio" id="secao-inicio">
-      <!-- Slider top -->
-      <div class="slider" id="slider">
-        <div class="swiper-container">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <a href="#"
-                ><img
-                  src="./src/slider/slider-1.svg"
-                  alt="slider plano de saúde"
-              /></a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#"
-                ><img
-                  src="./src/slider/slider-2.svg"
-                  alt="slider plano de saúde"
-              /></a>
-            </div>
-          </div>
-
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-      <!-- Main -->
-      <div class="main" id="main">
-        <h1 class="main-title">
-          Seja bem-vindos à Serra<span>Planos de Saúde</span>
-        </h1>
-        <div class="main-content">
-          <p>
-            Estamos aqui para cuidar do que mais importa: a sua
-            <span>saúde e bem-estar</span>. Na Serra Planos de Saúde,
-            acreditamos que um atendimento humanizado e de qualidade faz toda a
-            diferença.
-            <br />
-            <br />
-            Explore nosso site e descubra as soluções perfeitas para você e sua
-            família. Conte conosco em cada etapa da sua jornada para uma vida
-            mais saudável e tranquila.
-          </p>
-          <img src="./src/imagens/main-image.png" alt="imagem dos médicos" />
-        </div>
-      </div>
-      <!-- Beneficios -->
-      <div class="beneficios" id="beneficios">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <h1>Porque escolher a <span>Serra planos de Saúde?</span></h1>
-        <div class="beneficios-content">
-          <div class="beneficios-cards" id="beneficios-cards"></div>
-          <p>
-            A saúde é uma das suas maiores prioridades, mas o sistema público de
-            saúde muitas vezes dificulta o acesso rápido e eficaz ao atendimento
-            que você e sua família merecem. Com um plano de saúde, você evita
-            problemas comuns como longas filas de espera, demoras nas UPAs e a
-            frustração de aguardar meses por exames específicos.
-            <br />
-            <br />
-            Ao optar por um plano, você tem acesso rápido a uma rede de clínicas
-            e hospitais, evitando as longas esperas por atendimento médico. Além
-            disso, consultas e exames são agendados com agilidade, o que acelera
-            o diagnóstico e o tratamento.
-            <br />
-            <br />
-            Isso garante que você cuide da sua saúde de forma mais eficiente,
-            sem comprometer seu bem-estar. Um plano de saúde também oferece
-            cuidados preventivos, check-ups regulares e orientação médica para
-            detectar problemas antes que se agravem.
-            <br />
-            <br />
-            Investir em um plano de saúde significa mais segurança, conforto e
-            agilidade no cuidado com sua saúde e a de sua família. Não perca
-            tempo em filas intermináveis – a sua saúde não pode esperar!
-          </p>
-        </div>
-      </div>
-
-      <div class="depoimentos" id="depoimentos">
-        <h1 class="depoimento-title">O que estão falando de nós?</h1>
-        <div class="swiper-depoimentos">
-            <!-- <div class="gradiente"></div> -->
-            <div class="swiper-wrapper" id="lista-de-depoimentos">
-                <!-- lista de depoimentos vai aqui -->
-            </div>
-            <div class="swiper-button-next"></div> 
-            <div class="swiper-button-prev"></div> 
-        </div>
     </div>
-    
-    </section>
-  </body>
+  </header>
+  <!-- Seção Inicial -->
+  <section class="secao-inicio hidden" id="sec-inicio">
+    <!-- Slider da Seção -->
+    <div class="slider" id="slider">
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <a href="#"><img src="./src/slider/slider-1.svg" alt="slider plano de saúde" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="./src/slider/slider-2.svg" alt="slider plano de saúde" /></a>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- Main -->
+    <div class="main" id="main">
+      <h1 class="main-title">
+        Seja bem-vindos à Serra<span>Planos de Saúde</span>
+      </h1>
+      <div class="main-content">
+        <p>
+          Estamos aqui para cuidar do que mais importa: a sua
+          <span>saúde e bem-estar</span>. Na Serra Planos de Saúde,
+          acreditamos que um atendimento humanizado e de qualidade faz toda a
+          diferença.
+          <br />
+          <br />
+          Explore nosso site e descubra as soluções perfeitas para você e sua
+          família. Conte conosco em cada etapa da sua jornada para uma vida
+          mais saudável e tranquila.
+        </p>
+        <img src="./src/imagens/main-image.png" alt="imagem dos médicos" />
+      </div>
+    </div>
+    <!-- Beneficios -->
+    <div class="beneficios" id="beneficios">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <h1>Porque escolher a <span>Serra planos de Saúde?</span></h1>
+      <div class="beneficios-content">
+        <div class="beneficios-cards" id="beneficios-cards"></div>
+        <p>
+          A saúde é uma das suas maiores prioridades, mas o sistema público de
+          saúde muitas vezes dificulta o acesso rápido e eficaz ao atendimento
+          que você e sua família merecem. Com um plano de saúde, você evita
+          problemas comuns como longas filas de espera, demoras nas UPAs e a
+          frustração de aguardar meses por exames específicos.
+          <br />
+          <br />
+          Ao optar por um plano, você tem acesso rápido a uma rede de clínicas
+          e hospitais, evitando as longas esperas por atendimento médico. Além
+          disso, consultas e exames são agendados com agilidade, o que acelera
+          o diagnóstico e o tratamento.
+          <br />
+          <br />
+          Isso garante que você cuide da sua saúde de forma mais eficiente,
+          sem comprometer seu bem-estar. Um plano de saúde também oferece
+          cuidados preventivos, check-ups regulares e orientação médica para
+          detectar problemas antes que se agravem.
+          <br />
+          <br />
+          Investir em um plano de saúde significa mais segurança, conforto e
+          agilidade no cuidado com sua saúde e a de sua família. Não perca
+          tempo em filas intermináveis – a sua saúde não pode esperar!
+        </p>
+      </div>
+    </div>
+    <!-- Depoimentos -->
+    <div class="depoimentos" id="depoimentos">
+      <h1 class="depoimento-title">O que estão <span>falando de nós?</span></h1>
+      <div class="swiper-depoimentos">
+        <!-- <div class="gradiente"></div> -->
+        <div class="swiper-wrapper" id="lista-de-depoimentos">
+          <!-- lista de depoimentos vai aqui -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <!-- Perguntas Frequentes -->
+    <div class="faqs" id="faqs">
+      <div class="faqs-title" id="faqs-title">
+        <h1>Perguntas Frequentes?</h1>
+        <img src="./src/icon-faq.svg" alt="icon faq">
+      </div>
+      <div class="faqs-perguntas" id="faqs-perguntas">
+        <!-- Perguntas Frequentes -->
+      </div>
+    </div>
+  </section>
+  <!-- Seção Nossos Planos -->
+  <sectiion class="nossos-planos hidden" id="sec-nossos-planos">
+    Aqui é a seção Nossos Planos
+  </sectiion>
+  <footer class="hidden" id="footer">
+    <div class="container-footer" id="container-footer">
+      <img src="./src/logo-secundaria.svg" alt="logo image" class="logo" />
+      <p>Todos os direitos reservados.</p>
+  </footer>
+</body>
+
 </html>
