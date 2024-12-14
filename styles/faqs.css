@@ -49,6 +49,9 @@
 
 .faqs-perguntas details summary {
     list-style: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,6 +82,10 @@ details p {
     animation: animateIn .3s easet;
     font-size: 16px;
 
+}
+
+.faqs-perguntas details summary::-webkit-details-marker {
+    display: none;
 }
 
 @media (max-width: 750px) {
