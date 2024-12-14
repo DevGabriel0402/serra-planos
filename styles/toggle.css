@@ -96,6 +96,13 @@
     }
 }
 
+@media (max-width: 400px) {
+    .menu-lateral {
+        width: 100%;
+        max-width: 400px !important;
+    }
+}
+
 
 @keyframes moveIn {
 
