@@ -23,7 +23,6 @@ const Faqs = [
 
 ];
 
-// Função para criar o perfil no formato HTML
 function createFaqsHTML(faq) {
     return `
        <details>
@@ -33,15 +32,13 @@ function createFaqsHTML(faq) {
       `;
 }
 
-// Função para renderizar os perfis na página
 function renderFaqs() {
     const faqList = document.getElementById("faqs-perguntas");
 
     Faqs.forEach((faq) => {
         const FaqsHTML = createFaqsHTML(faq);
-        faqList.innerHTML += FaqsHTML; // Adiciona o HTML do perfil na lista
+        faqList.innerHTML += FaqsHTML;
     });
 }
 
-// Chama a função para renderizar os perfis
 renderFaqs();

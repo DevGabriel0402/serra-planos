@@ -41,42 +41,14 @@ function createDepoimentoHTML(depoimento) {
     `;
 }
 
-// Função para renderizar os perfis na página
 function renderDepoimentos() {
   const depoimentoList = document.getElementById("lista-de-depoimentos");
 
   Depoimentos.forEach((depoimento) => {
     const depoimentoHTML = createDepoimentoHTML(depoimento);
-    depoimentoList.innerHTML += depoimentoHTML; // Adiciona o HTML do perfil na lista
+    depoimentoList.innerHTML += depoimentoHTML;
   });
 }
 
-// Chama a função para renderizar os perfis
 renderDepoimentos();
 
-// Swiper JS par aos Depoimentos
-
-var swiper = new Swiper(".swiper-depoimentos", {
-    effect: 'slide',
-    slidesPerView: 3,  
-    navigation: {
-      nextEl: ".swiper-button-next",  // Corrigido para os seletores padrões
-      prevEl: ".swiper-button-prev",  // Corrigido para os seletores padrões
-    },
-    breakpoints: {
-      280: {
-        slidesPerView: 1,  // 1 slide por vez para telas pequenas
-        spaceBetween: 10,  // Ajusta o espaço entre os slides
-      },
-      765: {
-        slidesPerView: 2,  // 2 slides por vez para telas médias (como tablets)
-        spaceBetween: 20,  // Espaço maior entre os slides
-      },
-      1024: {
-        slidesPerView: 3,  // 3 slides por vez para telas grandes
-        spaceBetween: 30,  // Mais espaço entre os slides
-      },
-    },
-  });
-  
-  
