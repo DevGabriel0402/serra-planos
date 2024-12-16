@@ -1,19 +1,19 @@
 
 const cardData = [
     {
-        imgSrc: "../src/imagens/minas-gerais.png",
+        imgSrc: "../src/imagens/minas-gerais.webp",
         title: "O melhor plano para cidades de Minas Gerais.",
     },
     {
-        imgSrc: "../src/imagens/hospital-lf.png",
+        imgSrc: "../src/imagens/hospital-lf.webp",
         title: "Rede hospitalar de alta qualidade.",
     },
     {
-        imgSrc: "../src/imagens/atendimento.png",
+        imgSrc: "../src/imagens/atendimento.webp",
         title: "Atendimento Personalizado e Humanizado.",
     },
     {
-        imgSrc: "../src/imagens/valor.png",
+        imgSrc: "../src/imagens/valor.webp",
         title: "Preços acessíveis e condições flexíveis.",
     }
 ];

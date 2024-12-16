@@ -5,21 +5,21 @@ const Depoimentos = [
     role: "Autônomo",
     description:
       "Foi a melhor coisa que eu fiz foi contratar esse plano para meus filhos.",
-    imageUrl: "./src/imagens/Lucas-Freire.jpg",
+    imageUrl: "./src/imagens/Lucas-Freire.webp",
   },
   {
     name: "Gizele Gomes",
     role: "Supervisora de Comércio",
     description:
       "Contratar esse plano foi tão bom pra mim que agora, é um processo tão rápido, fora os benefícios.",
-    imageUrl: "./src/imagens/Gizele.jpg",
+    imageUrl: "./src/imagens/Gizele.webp",
   },
   {
     name: "Gabriel Lucas",
     role: "Programador",
     description:
       "Estava a procura de um plano assim, ágil, prático e com um custo benefício diferenciado.",
-    imageUrl: "./src/imagens/Gabriel.jpg",
+    imageUrl: "./src/imagens/Gabriel.webp",
   },
 ];
 
