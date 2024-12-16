@@ -26,7 +26,7 @@ const Faqs = [
 function createFaqsHTML(faq) {
     return `
        <details>
-          <summary>${faq.pergunta}<i class='bx bx-arrow-back'></i></summary>
+          <summary>${faq.pergunta}<i class='bx bxs-left-arrow'></i></summary>
           <p>${faq.resposta}</p>
         </details>
       `;

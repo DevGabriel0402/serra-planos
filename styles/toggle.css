@@ -3,7 +3,7 @@
 }
 
 .button-open {
-    display: none !important;
+    display: flex;
     font-size: 40px;
     color: var(--azul);
     cursor: pointer;
@@ -11,10 +11,7 @@
 
 .button-close {
     font-size: 32px;
-    color: var(--branco);
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    color: var(--azul);
     cursor: pointer;
 }
 
@@ -23,9 +20,9 @@
     min-height: 100vh;
     max-width: 280px;
     position: fixed;
-    top: 0;
+    top: 100px;
     right: 0;
-    padding-top: 60px;
+    padding-top: 20px;
     background-color: var(--azul);
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
     animation: moveIn .5s forwards;
@@ -83,6 +80,8 @@
 
     .menu-lateral {
         width: 100%;
+        top: 58px;
+
     }
 
     .menu-lateral a {
@@ -92,7 +91,7 @@
 
 
     .button-open {
-        display: flex !important;
+        display: flex;
     }
 }
 

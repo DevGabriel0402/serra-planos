@@ -31,7 +31,7 @@
   <title>Serra Planos de Saúde</title>
 </head>
 
-<body>
+<body id="body">
 
   <div id="loading">
     <svg width="257" height="257" viewBox="0 0 257 257" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,11 +60,11 @@
       </nav>
 
       <!-- Botao do Menu Lateral -->
-      <i class="bx bx-menu-alt-right button-open" id="button-open"></i>
+      <i class="bx bx-menu-alt-right button-open hidden" id="button-open"></i>
+      <i class="bx bxs-x-square button-close hidden" id="button-close"></i>
 
       <!-- Nav Lateral -->
       <div class="menu-lateral hidden-menu" id="menu-lateral">
-        <i class="bx bx-right-arrow-alt button-close" id="button-close"></i>
         <ul>
           <li id="menu-inicio">Inicio</li>
           <li id="menu-nossos-planos">Nossos Planos</li>
@@ -172,9 +172,22 @@
     </div>
   </section>
   <!-- Seção Nossos Planos -->
-  <sectiion class="nossos-planos hidden" id="sec-nossos-planos">
+  <sectiion class="nossos-planos hidden" id="sec-nossos-planos" style="min-height: 100vh;">
     Aqui é a seção Nossos Planos
   </sectiion>
+  <!-- Seção Rede -->
+  <sectiion class="rede hidden" id="sec-rede" style="min-height: 100vh;">
+    Aqui é a seção de Rede
+  </sectiion>
+  <!-- Seção Sobre -->
+  <sectiion class="sobre hidden" id="sec-sobre" style="min-height: 100vh;">
+    Aqui é a seção de Sobre
+  </sectiion>
+  <!-- Seção Contato -->
+  <sectiion class="contato hidden" id="sec-contato" style="min-height: 100vh;">
+    Aqui é a seção de Contato
+  </sectiion>
+
   <footer class="hidden" id="footer">
     <div class="container-footer" id="container-footer">
       <img src="./src/logo-secundaria.svg" alt="logo image" class="logo" />
