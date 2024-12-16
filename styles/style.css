@@ -56,6 +56,10 @@ header {
     
 }
 
+.container-header img{
+    cursor: pointer;
+}
+
 .container-header nav {
     display: flex;
     align-items: center;

@@ -10,3 +10,8 @@ window.addEventListener('load', () => {
         document.getElementById('button-open').classList.remove('hidden')
     }
 })
+
+
+document.getElementById('logo').addEventListener('click', () => {
+    window.location.reload()
+})
