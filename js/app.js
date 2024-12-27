@@ -33,6 +33,11 @@ navInicio.addEventListener('click', () => {
     secRede.classList.add('hidden')
     secSobre.classList.add('hidden')
     secContato.classList.add('hidden')
+
+    window.scroll({
+        top: 0,
+        behavior: "smooth",
+    })
 })
 
 navPlanos.addEventListener('click', () => {
@@ -47,6 +52,11 @@ navPlanos.addEventListener('click', () => {
     secRede.classList.add('hidden')
     secSobre.classList.add('hidden')
     secContato.classList.add('hidden')
+
+    window.scroll({
+        top: 0,
+        behavior: "smooth",
+    })
 })
 
 navRede.addEventListener('click', () => {
@@ -61,6 +71,11 @@ navRede.addEventListener('click', () => {
     secRede.classList.remove('hidden')
     secSobre.classList.add('hidden')
     secContato.classList.add('hidden')
+
+    window.scroll({
+        top: 0,
+        behavior: "smooth",
+    })
 })
 
 navSobre.addEventListener('click', () => {
@@ -75,6 +90,11 @@ navSobre.addEventListener('click', () => {
     secRede.classList.add('hidden')
     secSobre.classList.remove('hidden')
     secContato.classList.add('hidden')
+
+    window.scroll({
+        top: 0,
+        behavior: "smooth",
+    })
 })
 
 navContato.addEventListener('click', () => {
@@ -89,6 +109,11 @@ navContato.addEventListener('click', () => {
     secRede.classList.add('hidden')
     secSobre.classList.add('hidden')
     secContato.classList.remove('hidden')
+
+    window.scroll({
+        top: 0,
+        behavior: "smooth",
+    })
 })
 
 // Adicionando evento de click na navegação Mobile (Menu Lateral)
@@ -104,6 +129,11 @@ menuInicio.addEventListener('click', () => {
     secRede.classList.add('hidden')
     secSobre.classList.add('hidden')
     secContato.classList.add('hidden')
+
+    window.scroll({
+        top: 0,
+        behavior: "smooth",
+    })
 })
 
 menuPlanos.addEventListener('click', () => {
@@ -118,6 +148,11 @@ menuPlanos.addEventListener('click', () => {
     secRede.classList.add('hidden')
     secSobre.classList.add('hidden')
     secContato.classList.add('hidden')
+
+    window.scroll({
+        top: 0,
+        behavior: "smooth",
+    })
 })
 
 menuRede.addEventListener('click', () => {
@@ -132,6 +167,11 @@ menuRede.addEventListener('click', () => {
     secRede.classList.remove('hidden')
     secSobre.classList.add('hidden')
     secContato.classList.add('hidden')
+
+    window.scroll({
+        top: 0,
+        behavior: "smooth",
+    })
 })
 
 menuSobre.addEventListener('click', () => {
@@ -146,6 +186,11 @@ menuSobre.addEventListener('click', () => {
     secRede.classList.add('hidden')
     secSobre.classList.remove('hidden')
     secContato.classList.add('hidden')
+
+    window.scroll({
+        top: 0,
+        behavior: "smooth",
+    })
 })
 
 menuContato.addEventListener('click', () => {
@@ -160,4 +205,8 @@ menuContato.addEventListener('click', () => {
     secRede.classList.add('hidden')
     secSobre.classList.add('hidden')
     secContato.classList.remove('hidden')
+    window.scroll({
+        top: 0,
+        behavior: "smooth",
+    })
 })

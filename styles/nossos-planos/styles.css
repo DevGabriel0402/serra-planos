@@ -89,12 +89,15 @@
 .s-odonto {
     color: var(--azul);
     background-color: var(--verde);
+    width: 50%;
 
 }
 
 .c-odonto {
     color: var(--branco);
     background-color: var(--azul);
+    width: 50%;
+
 
 }
 
@@ -181,5 +184,10 @@
     #coparticipacao-total,
     #coparticipacao-parcial {
         flex-direction: column;
+    }
+
+    .s-odonto,
+    .c-odonto {
+        width: 100%;
     }
 }
