@@ -53,10 +53,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
-.container-header img{
+.container-header img {
     cursor: pointer;
 }
 
@@ -95,7 +95,7 @@ header {
 
 }
 
-.container-header .btn {
+.btn {
     text-decoration: none;
     background-color: var(--verde);
     padding: 8px 10px;
@@ -111,17 +111,17 @@ header {
     transition: all .1s;
 }
 
-.container-header .btn i {
+.btn i {
     transform: rotate(0);
     font-size: 18px;
     transition: all .3s;
 }
 
-.container-header .btn:hover {
+.btn:hover {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px inset;
 }
 
-.container-header .btn:hover i {
+.btn:hover i {
     transform: rotate(-45deg);
 }
 

@@ -1,0 +1,185 @@
+.nossos-planos {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.banner-np {
+    width: 100%;
+    height: auto;
+}
+
+.description-section {
+    padding-block: 20px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.description-section span {
+    font-weight: bold;
+    color: var(--azul);
+}
+
+.coparticipacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 40px;
+    gap: 40px;
+}
+
+.coparticipacao .tipos {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    text-transform: uppercase;
+    background-color: var(--azul);
+    padding: 15px;
+    border-radius: 6px;
+    color: var(--branco);
+}
+
+#total,
+#parcial {
+    z-index: 10;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+#total {
+    color: var(--azul);
+}
+
+
+#barra-animada {
+    position: absolute;
+    border-radius: 4px;
+    z-index: 1;
+    top: 5px;
+    width: 222px;
+    height: 80%;
+    background-color: var(--branco);
+    transform: translateX(-10px);
+    transition: all .3s;
+}
+
+
+#coparticipacao-total,
+#coparticipacao-parcial {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.s-odonto,
+.c-odonto {
+    padding: 18px 12px;
+    border-radius: 8px;
+    line-height: 150%;
+}
+
+.s-odonto {
+    color: var(--azul);
+    background-color: var(--verde);
+
+}
+
+.c-odonto {
+    color: var(--branco);
+    background-color: var(--azul);
+
+}
+
+.s-odonto .cop-title s {
+    font-weight: 400;
+    color: red;
+}
+
+.btn-np {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn-np-s {
+    margin-top: 20px;
+    background: var(--azul);
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.coparticipacao ul li {
+    list-style-position: inside;
+}
+
+@keyframes opacityIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 520px) {
+    .nossos-planos {
+        padding-inline: 20px;
+    }
+
+    .description-section {
+        font-size: 16px;
+    }
+
+    .tipos {
+        width: 320px;
+        gap: 5px;
+        flex-wrap: wrap;
+        padding-inline: 20px;
+    }
+
+    #total,
+    #parcial {
+        font-size: 10px;
+    }
+
+    #barra-animada {
+        width: 150px;
+        top: 4px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+
+}
+
+@media (max-width: 980px) {
+
+    #coparticipacao-total,
+    #coparticipacao-parcial {
+        flex-direction: column;
+    }
+}

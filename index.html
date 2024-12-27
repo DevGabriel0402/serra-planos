@@ -19,7 +19,8 @@
   <meta property="og:locale" content="pt_BR" />
 
   <meta name="robots" content="index, follow" />
-  <meta name="keywords" content="planos de saúde, plano de saúde acessível, saúde, cobertura de saúde, planos de saúde Brasil" />
+  <meta name="keywords"
+    content="planos de saúde, plano de saúde acessível, saúde, cobertura de saúde, planos de saúde Brasil" />
 
 
   <!-- Estilos -->
@@ -32,6 +33,7 @@
   <link rel="stylesheet" href="./styles/depoimentos.css" />
   <link rel="stylesheet" href="./styles/faqs.css" />
   <link rel="stylesheet" href="./styles/loading.css" />
+  <link rel="stylesheet" href="./styles/nossos-planos/styles.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -191,7 +193,144 @@
   </section>
   <!-- Seção Nossos Planos -->
   <sectiion class="nossos-planos hidden" id="sec-nossos-planos" style="min-height: 100vh;">
-    Aqui é a seção Nossos Planos
+    <img class="banner-np" src="./src/imagens/nossos-planos/banner.svg" alt="banner inicial">
+    <p class="description-section">Na <span>Serra Planos de Saúde</span>, oferecemos opções diversificadas de planos de
+      saúde para
+      atender você e sua família,
+      com a cobertura completa das operadoras <span>HAPVIDA</span> e <span>GNDI</span>, que são sinônimo de confiança e
+      qualidade no Brasil. Com
+      diversas modalidades de coparticipação e acomodação, nossos planos garantem atendimento médico de excelência e
+      muito mais.</p>
+    <div class="coparticipacao">
+      <div class="tipos">
+        <div id="barra-animada"></div>
+        <p id="total">Coparticipação Total</p>
+        <p id="parcial">Coparticipação Parcial</p>
+      </div>
+
+      <div id="coparticipacao-total" class="">
+        <div class="s-odonto">
+          <h2 class="cop-title">Coparticipação Total <s>Sem Odonto</s></h2>
+          <p class="cop-desc">A opção ideal para quem busca um plano mais econômico, pagando apenas pelos serviços
+            utilizados.
+            Com o Plano Coparticipação Total, você tem a vantagem de pagar apenas uma parte dos custos quando usar os
+            serviços de saúde, sem perder a cobertura de hospitais, clínicas e profissionais qualificados. Perfeito para
+            quem quer reduzir os custos mensais sem abrir mão de um atendimento de alta qualidade.</p>
+          <h4 class="cop-subtitle">Opções de Acomodação:</h4>
+          <ul class="acomodacao-list">
+            <li>Ambulatorial: Consultas, exames e procedimentos sem internação.</li>
+            <li>Enfermaria: Acomodação em quartos compartilhados em hospitais.</li>
+            <li>Apartamento: Acomodação em quartos individuais para maior conforto.</li>
+          </ul>
+          <h4 class="cop-subtitle">Benefícios:</h4>
+          <ul class="beneficios-list">
+            <li>Cobertura ambulatorial e hospitalar.</li>
+            <li>Consultas, exames e internações com coparticipação.</li>
+            <li>Acomodação flexível conforme a sua necessidade.</li>
+            <li>Rede de hospitais e clínicas de referência (HAPVIDA e GNDI).</li>
+          </ul>
+          <h4 class="cop-subtitle">Ideal para:</h4>
+          <ul class="ideal-list">
+            <li>Pessoas que utilizam os serviços médicos de forma esporádica e buscam um custo mensal mais baixo.</li>
+          </ul>
+          <a class="btn btn-np-s">Contratar agora <i class="bx bx-right-arrow-alt"></i></a>
+
+
+        </div>
+        <div class="c-odonto">
+          <h2 class="cop-title">Coparticipação Total <span>Com Odonto</span></h2>
+          <p class="cop-desc">Além da cobertura médica completa, este plano oferece também cuidado com a sua saúde
+            bucal.
+            O Plano Coparticipação Total + Odonto oferece todos os benefícios do plano anterior, mas com a vantagem de
+            incluir também a cobertura odontológica, proporcionando cuidado completo para você e sua família, com a
+            qualidade da HAPVIDA e GNDI.</p>
+          <h4 class="cop-subtitle">Opções de Acomodação:</h4>
+          <ul class="acomodacao-list">
+            <li>Ambulatorial: Consultas, exames e procedimentos sem internação.</li>
+            <li>Enfermaria: Acomodação em quartos compartilhados em hospitais.</li>
+            <li>Apartamento: Acomodação em quartos individuais para maior conforto.</li>
+          </ul>
+          <h4 class="cop-subtitle">Benefícios:</h4>
+          <ul class="beneficios-list">
+            <li>Cobertura ambulatorial e hospitalar.</li>
+            <li>Cobertura odontológica inclusa.</li>
+            <li>Consultas, exames e internações com coparticipação.</li>
+            <li>Acomodação flexível conforme a sua necessidade.</li>
+            <li>Rede de hospitais e clínicas de referência (HAPVIDA e GNDI).</li>
+          </ul>
+          <h4 class="cop-subtitle">Ideal para:</h4>
+          <ul class="ideal-list">
+            <li>Pessoas que utilizam os serviços médicos frequentemente ou busca realizar algum acompanhamento, alem de
+              serviços odontológico incluso.</li>
+          </ul>
+
+          <a class="btn btn-np">Contratar agora <i class="bx bx-right-arrow-alt"></i></a>
+
+
+        </div>
+      </div>
+      <div id="coparticipacao-parcial" class="hidden">
+        <div class="s-odonto">
+          <h2 class="cop-title">Coparticipação Parcial <s>Sem Odonto</s></h2>
+          <p class="cop-desc">A opção ideal para quem busca um plano mais econômico, pagando apenas pelos serviços
+            utilizados.
+            Com o Plano Coparticipação Parcial, você tem a vantagem de pagar apenas uma parte dos custos quando usar os
+            serviços de saúde, sem perder a cobertura de hospitais, clínicas e profissionais qualificados. Perfeito para
+            quem quer reduzir os custos mensais sem abrir mão de um atendimento de alta qualidade.</p>
+          <h4 class="cop-subtitle">Opções de Acomodação:</h4>
+          <ul class="acomodacao-list">
+            <li>Ambulatorial: Consultas, exames e procedimentos sem internação.</li>
+            <li>Enfermaria: Acomodação em quartos compartilhados em hospitais.</li>
+            <li>Apartamento: Acomodação em quartos individuais para maior conforto.</li>
+          </ul>
+          <h4 class="cop-subtitle">Benefícios:</h4>
+          <ul class="beneficios-list">
+            <li>Cobertura ambulatorial e hospitalar.</li>
+            <li>Consultas, exames e internações com coparticipação.</li>
+            <li>Acomodação flexível conforme a sua necessidade.</li>
+            <li>Rede de hospitais e clínicas de referência (HAPVIDA e GNDI).</li>
+          </ul>
+          <h4 class="cop-subtitle">Ideal para:</h4>
+          <ul class="ideal-list">
+            <li>Pessoas que utilizam os serviços médicos de forma esporádica e buscam um custo mensal mais baixo.</li>
+          </ul>
+          <a class="btn btn-np-s">Contratar agora <i class="bx bx-right-arrow-alt"></i></a>
+
+
+        </div>
+        <div class="c-odonto">
+          <h2 class="cop-title">Coparticipação Parcial <span>Com Odonto</span></h2>
+          <p class="cop-desc">Além da cobertura médica completa, este plano oferece também cuidado com a sua saúde
+            bucal.
+            O Plano Coparticipação Parcial + Odonto oferece todos os benefícios do plano anterior, mas com a vantagem de
+            incluir também a cobertura odontológica, proporcionando cuidado completo para você e sua família, com a
+            qualidade da HAPVIDA e GNDI.</p>
+          <h4 class="cop-subtitle">Opções de Acomodação:</h4>
+          <ul class="acomodacao-list">
+            <li>Ambulatorial: Consultas, exames e procedimentos sem internação.</li>
+            <li>Enfermaria: Acomodação em quartos compartilhados em hospitais.</li>
+            <li>Apartamento: Acomodação em quartos individuais para maior conforto.</li>
+          </ul>
+          <h4 class="cop-subtitle">Benefícios:</h4>
+          <ul class="beneficios-list">
+            <li>Cobertura ambulatorial e hospitalar.</li>
+            <li>Cobertura odontológica inclusa.</li>
+            <li>Consultas, exames e internações com coparticipação.</li>
+            <li>Acomodação flexível conforme a sua necessidade.</li>
+            <li>Rede de hospitais e clínicas de referência (HAPVIDA e GNDI).</li>
+          </ul>
+          <h4 class="cop-subtitle">Ideal para:</h4>
+          <ul class="ideal-list">
+            <li>Pessoas que utilizam os serviços médicos frequentemente ou busca realizar algum acompanhamento, alem de
+              serviços odontológico incluso.</li>
+          </ul>
+
+          <a class="btn btn-np">Contratar agora <i class="bx bx-right-arrow-alt"></i></a>
+
+
+        </div>
+      </div>
+    </div>
   </sectiion>
   <!-- Seção Rede -->
   <sectiion class="rede hidden" id="sec-rede" style="min-height: 100vh;">
