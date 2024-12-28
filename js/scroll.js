@@ -12,3 +12,11 @@ window.addEventListener('scroll', () => {
         document.getElementById('header').style.animation = 'upDown .5s ease'
     }
 })
+
+
+// Inserindo ano atual no footer
+
+let hoje = new Date()
+let anoAtual = hoje.getFullYear()
+const ano = document.getElementById('ano')
+ano.innerText = anoAtual
