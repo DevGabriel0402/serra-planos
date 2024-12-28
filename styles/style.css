@@ -168,6 +168,7 @@ header {
 .swiper-container img {
     width: 100%;
     height: auto;
+    cursor: pointer;
 }
 
 .swiper-pagination-bullet {
