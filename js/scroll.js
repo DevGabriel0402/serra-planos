@@ -44,7 +44,7 @@ btnEnviar.addEventListener('click', () => {
     const numSerraPlanos = "31991660594"
     const mensagem = function () {
         if (textArea.value == "") { return " não informado" } else {
-            return mensagem
+            return textArea.value
         }
     }
     const nome = nomeInput.value
