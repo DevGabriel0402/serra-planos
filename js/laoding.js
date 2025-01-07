@@ -1,4 +1,4 @@
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         document.getElementById("loading").classList.add("hidden");
         document.getElementById("header").classList.remove("hidden");
