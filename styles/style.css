@@ -8,7 +8,7 @@
 }
 
 :root {
-    --azul: #005998;
+    --azul: #3582B8;
     --verde: #b1c900;
     --branco: #fafafa;
     --preto: #262626;
@@ -173,6 +173,14 @@ header {
 
 .swiper-pagination-bullet {
     background-color: var(--verde) !important;
+    transition: all .3s ease !important;
+    height: 8px !important;
+}
+
+.swiper-pagination-bullet-active {
+    width: 25px !important;
+    border-radius: 8px !important;
+    height: 8px !important;
 }
 
 

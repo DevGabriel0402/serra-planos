@@ -5,6 +5,10 @@ var swiper = new Swiper('.swiper-container', {
     delay: 5000,
   },
   slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
 
 });
 
