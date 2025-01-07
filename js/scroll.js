@@ -65,13 +65,13 @@ btnEnviar.addEventListener('click', () => {
 
     const uriMensagem = `
     Olá *Serra Planos de Saúde* ${horaDoDia()} Meu nome é ${nome} e gostaria de saber mais informações sobre o plano ${plano}.
-
-    Segue informações completa:
-    Nome: ${nome}
-    Email: ${email}
-    Contato: ${contato}
-    Solicitando Informações do plano: ${plano}
-    Observação: ${mensagem()}
+    
+    \n\nSegue informações completa:
+    Nome: ${nome}\n
+    Email: ${email}\n
+    Contato: ${contato}\n
+    Solicitando Informações do plano: ${plano}\n
+    Observação: ${mensagem()}\n
 
     `
 
