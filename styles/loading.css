@@ -6,13 +6,9 @@
     width: 100%;
     min-height: 100vh;
     background-color: var(--branco);
-<<<<<<< HEAD
     overflow: hidden;
     z-index: 9999;
-=======
-    z-index: 999;
-    overflow-y: hidden;
->>>>>>> 35d40bf (Inserindo os dados da aba de Rede)
+
 }
 
 #loading svg {
