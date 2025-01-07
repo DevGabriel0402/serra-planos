@@ -21,6 +21,13 @@ const Depoimentos = [
       "Estava a procura de um plano assim, ágil, prático e com um custo benefício diferenciado.",
     imageUrl: "./src/imagens/Gabriel.webp",
   },
+  {
+    name: "Enzo Fernandes",
+    role: "Uber",
+    description:
+      "Estava precisando de um plano que atendesse toda a minha família, e esse foi o melhor.",
+    imageUrl: "https://zarp.localiza.com/wp-content/uploads/motorista-de-app-iniciante.jpg",
+  },
 ];
 
 // Função para criar o perfil no formato HTML
