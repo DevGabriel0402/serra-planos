@@ -1,21 +1,20 @@
 // Inicialize o Swiper
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper(".swiper-container", {
   loop: true,
   autoplay: {
     delay: 5000,
   },
   slidesPerView: 1,
   pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
+    el: ".swiper-pagination",
+    type: "bullets",
   },
-
 });
 
 // Swiper JS para os Depoimentos
 
 var swiper = new Swiper(".swiper-depoimentos", {
-  effect: 'slide',
+  effect: "slide",
   slidesPerView: 3,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -37,54 +36,52 @@ var swiper = new Swiper(".swiper-depoimentos", {
   },
 });
 
-document.getElementById('slider-1').addEventListener('click', () => {
-  document.getElementById('loading').classList.remove('hidden')
+document.getElementById("slider-1").addEventListener("click", () => {
+  document.getElementById("loading").classList.remove("hidden");
 
   setTimeout(() => {
-    document.getElementById('loading').classList.add('hidden')
+    document.getElementById("loading").classList.add("hidden");
 
-    navInicio.classList.remove(`active`)
-    navPlanos.classList.add(`active`)
-    navRede.classList.remove(`active`)
-    navSobre.classList.remove(`active`)
-    navContato.classList.remove(`active`)
+    navInicio.classList.remove(`active`);
+    navPlanos.classList.add(`active`);
+    navRede.classList.remove(`active`);
+    navSobre.classList.remove(`active`);
+    navContato.classList.remove(`active`);
 
-    secInicio.classList.add('hidden')
-    secNossosPlanos.classList.remove('hidden')
-    secRede.classList.add('hidden')
-    secSobre.classList.add('hidden')
-    secContato.classList.add('hidden')
+    secInicio.classList.add("hidden");
+    secNossosPlanos.classList.remove("hidden");
+    secRede.classList.add("hidden");
+    secSobre.classList.add("hidden");
+    secContato.classList.add("hidden");
 
     window.scroll({
       top: 0,
       behavior: "smooth",
-    })
+    });
   }, 1500);
+});
 
-})
-
-document.getElementById('slider-2').addEventListener('click', () => {
-  document.getElementById('loading').classList.remove('hidden')
+document.getElementById("slider-2").addEventListener("click", () => {
+  document.getElementById("loading").classList.remove("hidden");
 
   setTimeout(() => {
-    document.getElementById('loading').classList.add('hidden')
+    document.getElementById("loading").classList.add("hidden");
 
-    navInicio.classList.remove(`active`)
-    navPlanos.classList.remove(`active`)
-    navRede.classList.add(`active`)
-    navSobre.classList.remove(`active`)
-    navContato.classList.remove(`active`)
+    navInicio.classList.remove(`active`);
+    navPlanos.classList.remove(`active`);
+    navRede.classList.add(`active`);
+    navSobre.classList.remove(`active`);
+    navContato.classList.remove(`active`);
 
-    secInicio.classList.add('hidden')
-    secNossosPlanos.classList.add('hidden')
-    secRede.classList.remove('hidden')
-    secSobre.classList.add('hidden')
-    secContato.classList.add('hidden')
+    secInicio.classList.add("hidden");
+    secNossosPlanos.classList.add("hidden");
+    secRede.classList.remove("hidden");
+    secSobre.classList.add("hidden");
+    secContato.classList.add("hidden");
 
     window.scroll({
       top: 0,
       behavior: "smooth",
-    })
+    });
   }, 1500);
-
-})
+});

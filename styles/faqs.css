@@ -7,7 +7,6 @@
     justify-content: space-between;
     padding: 60px 40px;
     gap: 24px;
-
 }
 
 .faqs-title {
@@ -45,7 +44,7 @@
     background-color: var(--azul);
     border-radius: 10px;
     overflow-y: hidden;
-    transition: height .3s;
+    transition: height 0.3s;
 }
 
 .faqs-perguntas details summary {
@@ -68,7 +67,7 @@
 summary i {
     font-size: 18px;
     font-weight: 600;
-    transition: all .1s linear;
+    transition: all 0.1s linear;
 }
 
 details[open] summary i {
@@ -81,9 +80,8 @@ details p {
     border-radius: 10px;
     background-color: var(--azul);
     color: var(--branco);
-    animation: animateIn .3s easet;
+    animation: animateIn 0.3s easet;
     font-size: 16px;
-
 }
 
 .faqs-perguntas details summary::-webkit-details-marker {
@@ -111,7 +109,7 @@ details p {
         display: none;
     }
 
-    .faqs-perguntas details summary{
+    .faqs-perguntas details summary {
         height: 80px;
     }
 }

@@ -42,6 +42,3 @@
 .leaflet-control-attribution {
     display: none !important;
 }
-
-
-@media (min-width: 768px) {}

@@ -1,4 +1,3 @@
-
 const cardData = [
     {
         imgSrc: "../src/imagens/minas-gerais.webp",
@@ -15,15 +14,14 @@ const cardData = [
     {
         imgSrc: "../src/imagens/valor.webp",
         title: "Preços acessíveis e condições flexíveis.",
-    }
+    },
 ];
 
-
 function createCards(cards) {
-    const container = document.getElementById('beneficios-cards');
-    container.innerHTML = '';
+    const container = document.getElementById("beneficios-cards");
+    container.innerHTML = "";
 
-    cards.forEach(data => {
+    cards.forEach((data) => {
         const cardHTML = `
             <div class="card">
                     <img src="${data.imgSrc}"/>
@@ -34,66 +32,71 @@ function createCards(cards) {
     });
 }
 
-
 createCards(cardData);
-
 
 const cardRedeData = [
     {
         badge: "Hospital",
-        imgSrc: "https://www.hospitallifecenter.com.br/capaimg/1679921871_Capa_HLC-BH.png",
+        imgSrc:
+            "https://www.hospitallifecenter.com.br/capaimg/1679921871_Capa_HLC-BH.png",
         title: "Lifecenter",
-        fit: "cover"
+        fit: "cover",
     },
     {
         badge: "Hospital",
-        imgSrc: "https://busqueplanodesaude.com.br/media/hospitais/fotos/Imagem_do_WhatsApp_de_2024-07-28_%C3%A0s_21.02.15_c550a76c.jpg",
+        imgSrc:
+            "https://busqueplanodesaude.com.br/media/hospitais/fotos/Imagem_do_WhatsApp_de_2024-07-28_%C3%A0s_21.02.15_c550a76c.jpg",
         title: "Hospital Vera Cruz",
-        fit: "cover"
+        fit: "cover",
     },
     {
         badge: "Pronto Atendimento",
         imgSrc: "https://i.ytimg.com/vi/GqT1uxwia74/maxresdefault.jpg",
         title: "Pronto Atendimento Contorno",
-        fit: "cover"
+        fit: "cover",
     },
     {
         badge: "Clinica",
-        imgSrc: "https://centrodeoftalmologiabrasil.com.br/wp-content/uploads/2024/10/IDV_Centro-de-Oftalmologia-Brasil_Logo_Centro_Oftalmologico_Brasil_cor-1.png",
+        imgSrc:
+            "https://centrodeoftalmologiabrasil.com.br/wp-content/uploads/2024/10/IDV_Centro-de-Oftalmologia-Brasil_Logo_Centro_Oftalmologico_Brasil_cor-1.png",
         title: "Centro de Oftalmologia do Brasil",
-        fit: "contain"
+        fit: "contain",
     },
     {
         badge: "Clinica",
-        imgSrc: "https://clinicamaissaudeintegrada.com.br/wp-content/uploads/2017/09/logo_maior.png",
+        imgSrc:
+            "https://clinicamaissaudeintegrada.com.br/wp-content/uploads/2017/09/logo_maior.png",
         title: "Mais Saúde",
-        fit: "contain"
+        fit: "contain",
     },
     {
         badge: "Hospital",
-        imgSrc: "https://diariodocomercio.com.br/wp-content/uploads/2021/12/Hapvida-hospital-Octaviano-Neves.jpg",
+        imgSrc:
+            "https://diariodocomercio.com.br/wp-content/uploads/2021/12/Hapvida-hospital-Octaviano-Neves.jpg",
         title: "Octaviano Neves",
-        fit: "cover"
+        fit: "cover",
     },
     {
         badge: "Clinica",
-        imgSrc: "https://medsempre.com.br/wp-content/uploads/2022/02/whatsapp-image-2022-02-14-at-141840.jpeg",
+        imgSrc:
+            "https://medsempre.com.br/wp-content/uploads/2022/02/whatsapp-image-2022-02-14-at-141840.jpeg",
         title: "Cuidar Bem",
-        fit: "cover"
+        fit: "cover",
     },
     {
         badge: "Clinica",
-        imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe0OIBW0FJI5xFe6mlsAjoeWnloFB8r_ggIg&s",
+        imgSrc:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe0OIBW0FJI5xFe6mlsAjoeWnloFB8r_ggIg&s",
         title: "Med Life",
-        fit: "contain"
+        fit: "contain",
     },
 ];
 
 function createRedeCards(cards) {
-    const container = document.getElementById('cards-rede');
-    container.innerHTML = '';
+    const container = document.getElementById("cards-rede");
+    container.innerHTML = "";
 
-    cards.forEach(data => {
+    cards.forEach((data) => {
         const cardHTML = `
               <div class="card">
                 <div class="img-card">
@@ -106,6 +109,5 @@ function createRedeCards(cards) {
         container.innerHTML += cardHTML;
     });
 }
-
 
 createRedeCards(cardRedeData);

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
     padding: 0;
@@ -8,10 +8,14 @@
 }
 
 :root {
-    --azul: #3582B8;
+    --azul: #3582b8;
     --verde: #b1c900;
     --branco: #fafafa;
     --preto: #262626;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,12 +29,9 @@ body {
     overflow-x: hidden;
 }
 
-
-
 .hidden {
     display: none !important;
 }
-
 
 /* Header */
 
@@ -42,7 +43,7 @@ header {
     justify-content: center;
     top: 0;
     padding: 10px 20px;
-    transition: all .2s;
+    transition: all 0.2s;
     z-index: 99;
     background-color: var(--branco);
 }
@@ -53,7 +54,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .container-header img {
@@ -86,13 +86,12 @@ header {
     height: 150%;
     width: fit-content;
     padding-inline: 5p x;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .container-header ul li:hover {
     transform: scale(1.05);
     font-weight: 600;
-
 }
 
 .btn {
@@ -108,13 +107,13 @@ header {
     border-radius: 5px;
     text-transform: uppercase;
     font-size: 14px;
-    transition: all .1s;
+    transition: all 0.1s;
 }
 
 .btn i {
     transform: rotate(0);
     font-size: 18px;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .btn:hover {
@@ -145,8 +144,6 @@ header {
     z-index: 0;
 }
 
-
-
 .swiper-container {
     margin-top: 5px;
     width: 100%;
@@ -162,7 +159,6 @@ header {
 .swiper-slide {
     width: 100%;
     height: auto;
-
 }
 
 .swiper-container img {
@@ -173,7 +169,7 @@ header {
 
 .swiper-pagination-bullet {
     background-color: var(--verde) !important;
-    transition: all .3s ease !important;
+    transition: all 0.3s ease !important;
     height: 8px !important;
 }
 
@@ -182,7 +178,6 @@ header {
     border-radius: 8px !important;
     height: 8px !important;
 }
-
 
 footer {
     width: 100%;
@@ -210,7 +205,6 @@ footer .container-footer {
 
     100% {
         transform: translateY(-2px);
-
     }
 }
 
@@ -225,7 +219,6 @@ footer .container-footer {
 }
 
 @media (max-width: 400px) {
-
     .container-footer {
         flex-direction: column;
     }

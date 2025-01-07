@@ -8,7 +8,6 @@
     background-color: var(--branco);
     overflow: hidden;
     z-index: 9999;
-
 }
 
 #loading svg {
@@ -17,7 +16,6 @@
 }
 
 #loading svg path {
-
     animation: fillAnimation 3s linear infinite;
     /* Preenchimento contínuo */
 }
@@ -30,12 +28,12 @@
     }
 
     33% {
-        fill: #B1C900;
+        fill: #b1c900;
         /* Segunda cor */
     }
 
     66% {
-        fill: #F6F6F6;
+        fill: #f6f6f6;
         /* Terceira cor */
     }
 
