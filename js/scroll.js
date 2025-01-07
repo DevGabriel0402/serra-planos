@@ -65,13 +65,8 @@ btnEnviar.addEventListener('click', () => {
 
     const uriMensagem = `
     Olá *Serra Planos de Saúde*, ${horaDoDia()}
-    \nMeu nome é ${nome} e gostaria de saber mais informações sobre o plano ${plano}.
-    \nSegue informações completa:
-    *Nome:* ${nome}
-    *Email:* ${email}
-    *Contato:* ${contato}
-    *Solicitando Informações do plano:* ${plano}
-    *Observação:* ${mensagem()}`
+    Meu nome é ${nome} e gostaria de saber mais informações sobre o plano ${plano}.\n
+    Segue informações completa:\n*Nome:* ${nome}\n*Email:* ${email}\n*Contato:* ${contato}\n*Plano:* ${plano}\n*Observação:* ${mensagem()}`
 
     const url = `https://wa.me/55${numSerraPlanos}?text=${encodeURI(uriMensagem)}`
 
