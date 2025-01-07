@@ -24,7 +24,7 @@ function createCards(cards) {
     cards.forEach((data) => {
         const cardHTML = `
             <div class="card">
-                    <img src="${data.imgSrc}"/>
+                    <img src="${data.imgSrc}" alt="imagem do card"/>
                     <p class="card-title">${data.title}</p>
             </div>
         `;
