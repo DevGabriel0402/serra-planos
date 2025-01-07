@@ -378,3 +378,45 @@ btnNavMenu.addEventListener('click', () => {
         });
     }, 1500);
 })
+
+
+const contatoForm = () => {
+    document.getElementById("loading").classList.remove("hidden");
+    menuLateral.classList.add("hidden-menu");
+    btnClose.classList.add("hidden");
+
+    if (window.innerWidth <= 400) {
+        document.getElementById("body").style.overflow = "auto";
+        btnOpen.classList.remove("hidden");
+        btnOpen.style.opacity = 1;
+    }
+
+    setTimeout(() => {
+        document.getElementById("loading").classList.add("hidden");
+
+        navInicio.classList.remove(`active`);
+        navPlanos.classList.remove(`active`);
+        navRede.classList.remove(`active`);
+        navSobre.classList.remove(`active`);
+        navContato.classList.add(`active`);
+
+        navInicio.classList.remove(`active`);
+        navPlanos.classList.remove(`active`);
+        navRede.classList.remove(`active`);
+        navSobre.classList.remove(`active`);
+        navContato.classList.add(`active`);
+
+        secInicio.classList.add("hidden");
+        secNossosPlanos.classList.add("hidden");
+        secRede.classList.add("hidden");
+        secSobre.classList.add("hidden");
+        secContato.classList.remove("hidden");
+
+
+
+        window.scroll({
+            top: 0,
+            behavior: "smooth",
+        });
+    }, 1500)
+}
