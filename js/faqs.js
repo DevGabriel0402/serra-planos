@@ -64,5 +64,3 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 var marker = L.marker([long, lat]).addTo(map);
-
-marker.bindPopup("<b>Serra Planos</b><br>Aglomerado Serra.").openPopup();
