@@ -20,7 +20,6 @@ let anoAtual = hoje.getFullYear();
 const ano = document.getElementById("ano");
 ano.innerText = anoAtual;
 
-
 //Funcao para mandar mensagem no whatsApp
 
 const contatoInput = document.getElementById("inputContato");
@@ -28,7 +27,7 @@ const nomeInput = document.getElementById("inputNome");
 const emailInput = document.getElementById("inputEmail");
 const textArea = document.getElementById("textArea");
 const selectInput = document.getElementById("select");
-const btnEnviar = document.getElementById("btnContato")
+const btnEnviar = document.getElementById("btnContato");
 
 // Evento para mascarar o contato com () e - assim (00) 00000-0000
 
@@ -39,53 +38,43 @@ contatoInput.addEventListener("input", (event) => {
     event.target.value = valor;
 });
 
-
-btnEnviar.addEventListener('click', () => {
-    const numSerraPlanos = "31991660594"
+btnEnviar.addEventListener("click", () => {
+    const numSerraPlanos = "31991660594";
     const mensagem = function () {
-        if (textArea.value == "") { return " não informado" } else {
-            return textArea.value
+        if (textArea.value == "") {
+            return " não informado";
+        } else {
+            return textArea.value;
         }
-    }
-    const nome = nomeInput.value
-    const email = emailInput.value
-    const plano = selectInput.value
-    const contato = contatoInput.value
+    };
+    const nome = nomeInput.value;
+    const email = emailInput.value;
+    const plano = selectInput.value;
+    const contato = contatoInput.value;
     const horaDoDia = function () {
-        const date = new Date()
+        const date = new Date();
 
         if (date.getHours() >= 0 && date.getHours() <= 11) {
-            return "bom dia!"
+            return "bom dia!";
         } else if (date.getHours() >= 12 && date.getHours() <= 17) {
-            return "boa tarde!"
+            return "boa tarde!";
         } else {
-            return "boa noite!"
+            return "boa noite!";
         }
-    }
+    };
 
     const uriMensagem = `
-    Olá *Serra Planos de Saúde*, ${horaDoDia()}
-    Meu nome é ${nome} e gostaria de saber mais informações sobre o plano ${plano}.\n
-    Segue informações completa:\n*Nome:* ${nome}\n*Email:* ${email}\n*Contato:* ${contato}\n*Plano:* ${plano}\n*Observação:* ${mensagem()}`
+    Olá *Serra Planos de Saúde*, ${horaDoDia()}\nMeu nome é ${nome} e gostaria de saber mais informações sobre o plano ${plano}.\nSegue informações completa:\n*Nome:* ${nome}\n*Email:* ${email}\n*Contato:* ${contato}\n*Plano:* ${plano}\n*Observação:* ${mensagem()}`;
 
-    const url = `https://wa.me/55${numSerraPlanos}?text=${encodeURI(uriMensagem)}`
+    const url = `https://wa.me/55${numSerraPlanos}?text=${encodeURI(
+        uriMensagem
+    )}`;
 
     if (nome == "" || email == "" || contato == "" || plano == "nulo") {
-        alert("Verifique se os campos de Nome, Email, WhastApp e Plano estão Corretamente Preenchidos.")
+        alert(
+            "Verifique se os campos de Nome, Email, WhastApp e Plano estão Corretamente Preenchidos."
+        );
     } else {
-        window.open(url, "_blank")
+        window.open(url, "_blank");
     }
-
-
-
-})
-
-
-
-
-
-
-
-
-
-
+});
