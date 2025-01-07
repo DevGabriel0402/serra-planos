@@ -55,16 +55,17 @@ btnEnviar.addEventListener('click', () => {
         const date = new Date()
 
         if (date.getHours() >= 0 && date.getHours() <= 11) {
-            return "Bom dia!"
+            return "bom dia!"
         } else if (date.getHours() >= 12 && date.getHours() <= 17) {
-            return "Boa tarde!"
+            return "boa tarde!"
         } else {
-            return "Boa noite!"
+            return "boa noite!"
         }
     }
 
     const uriMensagem = `
-    Olá *Serra Planos de Saúde* ${horaDoDia()} Meu nome é ${nome} e gostaria de saber mais informações sobre o plano ${plano}.
+    Olá *Serra Planos de Saúde*, ${horaDoDia()}
+    \nMeu nome é ${nome} e gostaria de saber mais informações sobre o plano ${plano}.
     \nSegue informações completa:
     *Nome:* ${nome}
     *Email:* ${email}
