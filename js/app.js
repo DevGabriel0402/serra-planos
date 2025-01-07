@@ -10,6 +10,7 @@ const navPlanos = document.getElementById(`planos`);
 const navRede = document.getElementById(`rede`);
 const navSobre = document.getElementById(`sobre`);
 const navContato = document.getElementById(`contato`);
+const btnNav = document.getElementById(`btn-contratar`)
 
 // Tab da navegação Menu
 const menuInicio = document.getElementById(`menu-inicio`);
@@ -17,6 +18,8 @@ const menuPlanos = document.getElementById(`menu-nossos-planos`);
 const menuRede = document.getElementById(`menu-rede`);
 const menuSobre = document.getElementById(`menu-sobre`);
 const menuContato = document.getElementById(`menu-contato`);
+const btnNavMenu = document.getElementById(`btn-contratar-menu`)
+
 
 // Adicionando evento de click na navegação Desktop
 navInicio.addEventListener("click", () => {
@@ -143,6 +146,33 @@ navContato.addEventListener("click", () => {
         });
     }, 1500);
 });
+
+btnNav.addEventListener('click', () => {
+    document.getElementById("loading").classList.remove("hidden");
+
+    setTimeout(() => {
+        document.getElementById("loading").classList.add("hidden");
+
+        navInicio.classList.remove(`active`);
+        navPlanos.classList.remove(`active`);
+        navRede.classList.remove(`active`);
+        navSobre.classList.remove(`active`);
+        navContato.classList.add(`active`);
+
+        secInicio.classList.add("hidden");
+        secNossosPlanos.classList.add("hidden");
+        secRede.classList.add("hidden");
+        secSobre.classList.add("hidden");
+        secContato.classList.remove("hidden");
+
+        window.scroll({
+            top: 0,
+            behavior: "smooth",
+        });
+    }, 1500);
+})
+
+
 
 // Adicionando evento de click na navegação Mobile (Menu Lateral)
 menuInicio.addEventListener("click", () => {
@@ -314,3 +344,37 @@ menuContato.addEventListener("click", () => {
         });
     }, 1500);
 });
+
+btnNavMenu.addEventListener('click', () => {
+    document.getElementById("loading").classList.remove("hidden");
+    menuLateral.classList.add("hidden-menu");
+    btnClose.classList.add("hidden");
+
+    if (window.innerWidth <= 400) {
+        document.getElementById("body").style.overflow = "auto";
+    }
+
+    setTimeout(() => {
+        document.getElementById("loading").classList.add("hidden");
+
+        navInicio.classList.remove(`active`);
+        navPlanos.classList.remove(`active`);
+        navRede.classList.remove(`active`);
+        navSobre.classList.remove(`active`);
+        navContato.classList.add(`active`);
+
+        secInicio.classList.add("hidden");
+        secNossosPlanos.classList.add("hidden");
+        secRede.classList.add("hidden");
+        secSobre.classList.add("hidden");
+        secContato.classList.remove("hidden");
+
+        btnOpen.classList.remove("hidden");
+        btnOpen.style.opacity = 1;
+
+        window.scroll({
+            top: 0,
+            behavior: "smooth",
+        });
+    }, 1500);
+})

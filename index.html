@@ -27,6 +27,7 @@
   <link rel="shortcut icon" href="./src/favicon.png" type="image/x-icon" />
   <link rel="apple-touch-icon" href="./src/favicon.png" />
   <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/cookies.css" />
   <link rel="stylesheet" href="./styles/toggle.css" />
   <link rel="stylesheet" href="./styles/main.css" />
   <link rel="stylesheet" href="./styles/beneficios.css" />
@@ -36,6 +37,7 @@
   <link rel="stylesheet" href="./styles/nossos-planos/styles.css" />
   <link rel="stylesheet" href="./styles/redes/styles.css" />
   <link rel="stylesheet" href="./styles/sobre/styles.css" />
+  <link rel="stylesheet" href="./styles/contato/styles.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -50,6 +52,7 @@
   <script src="./js/depoimentos.js" defer></script>
   <script src="./js/faqs.js" defer></script>
   <script src="./js/laoding.js" defer></script>
+  <script src="./js/cookies.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -69,6 +72,19 @@
         d="M83.8348 150.163C70.0789 155.322 42.2412 154.833 40.938 111.61C43.7061 72.2183 86.188 48.5691 108.321 41.1743C102.421 44.6526 92.0341 58.6138 97.6812 86.6325C110.93 125.294 93.9708 145.095 83.8348 150.163Z" />
     </svg>
   </div>
+  <div class="cookie-container" id="cookieContainer">
+    <div class="cookie-content">
+      <div class="cookie-text">
+        <h3>🍪 Nós usamos cookies!</h3>
+        <p>Utilizamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nosso site. Ao clicar
+          em "Aceitar", você concorda com o uso de TODOS os cookies.</p>
+      </div>
+      <div class="cookie-buttons">
+        <button class="cookie-btn accept-btn" id="acceptBtn">Aceitar</button>
+        <button class="cookie-btn decline-btn" id="declineBtn">Recusar</button>
+      </div>
+    </div>
+  </div>
   <!-- Header Fixo -->
   <header class="header hidden" id="header">
     <div class="container-header" id="container-header">
@@ -82,7 +98,7 @@
           <li id="sobre">Sobre</li>
           <li id="contato">Contato</li>
         </ul>
-        <a href="" class="btn" id="btn-contratar">Contratar agora <i class="bx bx-right-arrow-alt"></i></a>
+        <a class="btn" id="btn-contratar">Contratar agora <i class="bx bx-right-arrow-alt"></i></a>
       </nav>
 
       <!-- Botao do Menu Lateral -->
@@ -98,7 +114,7 @@
           <li id="menu-sobre">Sobre</li>
           <li id="menu-contato">Contato</li>
         </ul>
-        <a href="#" class="btn" id="btn-contratar">Contratar agora <i class="bx bx-right-arrow-alt"></i></a>
+        <a href="#" class="btn" id="btn-contratar-menu">Contratar agora <i class="bx bx-right-arrow-alt"></i></a>
       </div>
     </div>
   </header>
@@ -384,7 +400,70 @@
   </sectiion>
   <!-- Seção Contato -->
   <sectiion class="contato hidden" id="sec-contato" style="min-height: 100vh;">
-    Aqui é a seção de Contato
+    <p class="description">
+      Na Serra Planos, entendemos que a saúde é o bem mais precioso e estamos aqui para oferecer os melhores planos
+      de saúde para você e sua família. Se você tem alguma dúvida, precisa de mais informações ou deseja conhecer nossas
+      opções de planos, nossa equipe está pronta para atendê-lo com toda a atenção e cuidado que você merece.</p> <br>
+
+    <p><span>Atendimento Personalizado</span></p><br>
+
+    <p>Nosso compromisso é oferecer soluções personalizadas que atendam às suas necessidades. Se você ainda não
+      encontrou
+      o plano ideal ou deseja ajustar seu atual, estamos à disposição para auxiliá-lo. Nossa equipe especializada está
+      preparada para esclarecer suas dúvidas e ajudá-lo a escolher o melhor plano, de acordo com o seu perfil e
+      preferências.</p><br>
+
+    <p><span>Fale Conosco de Forma Rápida e Simples</span></p><br>
+
+    <p>Utilize o formulário abaixo para nos enviar suas dúvidas ou solicitações. Também estamos disponíveis por
+      telefone
+      e e-mail para atendê-lo de forma ágil e eficaz. Seja qual for o meio escolhido, nossa missão é proporcionar uma
+      experiência sem complicações e garantir que você tenha acesso a todas as informações de forma clara e objetiva.
+    </p>
+    <br>
+
+    <p><span>Estamos Aqui para Você</span></p><br>
+
+    <p>Sabemos que cada cliente é único e possui necessidades diferentes. Por isso, nossa equipe está sempre pronta
+      para
+      ouvir e ajudar a encontrar a melhor solução para o seu plano de saúde. Se você tiver qualquer dúvida sobre
+      cobertura, benefícios ou processos, nossa equipe está à disposição para fornecer toda a orientação necessária.</p>
+    <br>
+
+    <p><span>Compromisso com a Sua Saúde</span> </p><br>
+
+    <p>Na Serra Planos, o seu bem-estar é a nossa prioridade. Estamos sempre em busca das melhores opções para que
+      você e sua família possam viver com mais tranquilidade e segurança. Entre em contato conosco e descubra como
+      podemos ajudar a cuidar da sua saúde de forma simples e eficaz.</p><br>
+
+
+    </p>
+    <div class="container-form">
+      <h2>Entre em contato conosco</h2>
+
+      <form class="formularioContato">
+        <input id="inputNome" type="text" placeholder="Informe seu nome..." required>
+        <input id="inputEmail" type="email" placeholder="Informe seu email..." required>
+        <div style="display: flex; flex-direction: row; width: 100%;gap: 5px;">
+          <input id="inputContato" type="text" placeholder="Informe seu whatsApp..." maxlength="15" required>
+          <select name="select" id="select">
+            <option value="nulo" selected>Informe o plano</option>
+            <option value="Individual">Individual</option>
+            <option value="Individual com Odonto">Individual com Odonto</option>
+            <option value="Empresarial">Empresarial</option>
+            <option value="Empresarial com Odonto">Empresarial com Odonto</option>
+            <option value="Familiar">Familiar</option>
+            <option value="Familiar com Odonto">Familiar com Odonto</option>
+          </select>
+        </div>
+
+        <textarea id="textArea" rows="5"></textarea>
+        <button id="btnContato">Enviar Mensagem</button>
+
+
+      </form>
+    </div>
+
   </sectiion>
 
   <footer class="hidden" id="footer">
