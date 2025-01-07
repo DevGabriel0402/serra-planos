@@ -24,7 +24,7 @@ function createCards(cards) {
     cards.forEach((data) => {
         const cardHTML = `
             <div class="card">
-                    <img src="${data.imgSrc}" alt="imagem do card"/>
+                    <img width="100%" height="auto" src="${data.imgSrc}" alt="imagem do card"/>
                     <p class="card-title">${data.title}</p>
             </div>
         `;
@@ -101,7 +101,7 @@ function createRedeCards(cards) {
               <div class="card">
                 <div class="img-card">
                     <p class="badge">${data.badge}</p>
-                    <img style="object-fit:${data.fit}" src=${data.imgSrc} alt="imagem da rede">
+                    <img width:"100%" height="auto" style="object-fit:${data.fit}" src=${data.imgSrc} alt="imagem da rede">
                 </div>
                 <h2 class="title-card">${data.title}</h2>
               </div>
