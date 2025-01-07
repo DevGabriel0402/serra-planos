@@ -66,16 +66,16 @@ btnEnviar.addEventListener('click', () => {
     const uriMensagem = `
     Olá *Serra Planos de Saúde* ${horaDoDia()} Meu nome é ${nome} e gostaria de saber mais informações sobre o plano ${plano}.
     
-    \n\nSegue informações completa:
+    \nSegue informações completa:\n
     Nome: ${nome}\n
     Email: ${email}\n
     Contato: ${contato}\n
     Solicitando Informações do plano: ${plano}\n
-    Observação: ${mensagem()}\n
+    Observação: ${mensagem()}
 
     `
 
-    const url = `https://wa.me/55${numSerraPlanos}?text=${encodeURIComponent(uriMensagem)}`
+    const url = `https://wa.me/55${numSerraPlanos}?text=${encodeURI(uriMensagem)}`
 
     if (nome == "" || email == "" || contato == "" || plano == "nulo") {
         alert("Verifique se os campos de Nome, Email, WhastApp e Plano estão Corretamente Preenchidos.")
