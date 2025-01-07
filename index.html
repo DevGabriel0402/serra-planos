@@ -35,9 +35,12 @@
   <link rel="stylesheet" href="./styles/loading.css" />
   <link rel="stylesheet" href="./styles/nossos-planos/styles.css" />
   <link rel="stylesheet" href="./styles/redes/styles.css" />
+  <link rel="stylesheet" href="./styles/sobre/styles.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <!-- Scripts -->
   <script src="./js/app.js" defer></script>
   <script src="./js/scroll.js" defer></script>
@@ -48,6 +51,8 @@
   <script src="./js/faqs.js" defer></script>
   <script src="./js/laoding.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
   <title>Serra Planos de Saúde</title>
 </head>
@@ -341,8 +346,41 @@
     </div>
   </sectiion>
   <!-- Seção Sobre -->
-  <sectiion class="sobre hidden" id="sec-sobre" style="min-height: 100vh;">
-    Aqui é a seção de Sobre
+  <sectiion class="sobre" id="sec-sobre" style="min-height: 100vh;">
+    <h2 class="titulo">Sobre a Serra Planos</h2>
+    <div class="conteudo">
+      <div class="texto">
+        <p>
+          A <strong>Serra Planos</strong> é uma empresa referência em soluções de planos de saúde
+          para pessoas físicas e jurídicas. Nossa trajetória começou há mais de 10 anos, com o objetivo
+          de facilitar o acesso dos brasileiros a serviços médicos de qualidade, prezando sempre pela
+          transparência e pelo cuidado com nossos clientes.
+        </p>
+        <p>
+          Trabalhamos em parceria com as principais operadoras de saúde do Brasil, oferecendo uma
+          ampla variedade de planos que se ajustam às necessidades de cada cliente. Seja você um
+          profissional autônomo, uma família ou uma grande empresa, temos opções personalizadas
+          para garantir o melhor custo-benefício.
+        </p>
+        <p>
+          Além de oferecer suporte completo na escolha do plano ideal, a Serra Planos se destaca
+          pelo atendimento humanizado. Nossa equipe está sempre pronta para tirar dúvidas, auxiliar
+          nos processos de contratação e garantir que você aproveite ao máximo os benefícios do seu plano.
+        </p>
+        <p>
+          Sabemos que a saúde é um dos bens mais preciosos. Por isso, nosso compromisso vai além
+          da venda de planos. Oferecemos informações atualizadas sobre saúde e bem-estar, criando um
+          canal direto com nossos clientes para mantê-los informados e protegidos em todas as situações.
+        </p>
+        <p>
+          Venha fazer parte da família Serra Planos e descubra como é simples e acessível cuidar da sua saúde.
+          Estamos localizados na região serrana, mas atendemos clientes de todo o Brasil, garantindo
+          suporte ágil e eficiente. Nossa missão é cuidar de você e de quem você ama.
+        </p>
+      </div>
+      <div class="mapa" id="map">
+      </div>
+    </div>
   </sectiion>
   <!-- Seção Contato -->
   <sectiion class="contato hidden" id="sec-contato" style="min-height: 100vh;">

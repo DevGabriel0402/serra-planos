@@ -1,4 +1,4 @@
-// Array de objetos com os dados dos perfis
+// Array de objetos com os dados das Faqs
 const Faqs = [
     {
         pergunta: "O que está incluso no meu plano de saúde?",
@@ -23,6 +23,8 @@ const Faqs = [
 
 ];
 
+// Criacao das Faqs
+
 function createFaqsHTML(faq) {
     return `
        <details>
@@ -31,6 +33,8 @@ function createFaqsHTML(faq) {
         </details>
       `;
 }
+
+// Rederizacao das Faqs
 
 function renderFaqs() {
     const faqList = document.getElementById("faqs-perguntas");
@@ -42,3 +46,20 @@ function renderFaqs() {
 }
 
 renderFaqs();
+
+
+
+// Codigo do Mapa
+
+const long = "-19.939477"
+const lat = "-43.910355"
+
+var map = L.map('map').setView([long, lat], 14);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 15,
+}).addTo(map);
+
+var marker = L.marker([long, lat]).addTo(map);
+
+marker.bindPopup("<b>Serra Planos</b><br>Aglomerado Serra.").openPopup();
